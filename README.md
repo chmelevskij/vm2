@@ -71,18 +71,23 @@ vm.run(`
 
 ## Documentation
 
-* [VM](#vm)
-* [NodeVM](#nodevm)
-* [VMScript](#vmscript)
-* [Error handling](#error-handling)
-* [Debugging a sandboxed code](#debugging-a-sandboxed-code)
-* [Read-only objects](#read-only-objects-experimental)
-* [Protected objects](#protected-objects-experimental)
-* [Cross-sandbox relationships](#cross-sandbox-relationships)
-* [CLI](#cli)
-* [2.x to 3.x changes](https://github.com/patriksimek/vm2/wiki/2.x-to-3.x-changes)
-* [1.x and 2.x docs](https://github.com/patriksimek/vm2/wiki/1.x-and-2.x-docs)
-* [Contributing](https://github.com/patriksimek/vm2/wiki/Contributing)
+- [vm2 ![NPM Version](#vm2-npm-versionnpm-url-npm-downloadsdownloads-imagedownloads-url-package-qualityquality-imagequality-url-travis-citravis-imagetravis-url-known-vulnerabilitiessnyk-imagesnyk-url)
+  - [Installation](#installation)
+  - [Quick Example](#quick-example)
+  - [Documentation](#documentation)
+  - [VM](#vm)
+  - [NodeVM](#nodevm)
+    - [Loading modules by relative path](#loading-modules-by-relative-path)
+  - [VMScript](#vmscript)
+  - [Error handling](#error-handling)
+  - [Debugging a sandboxed code](#debugging-a-sandboxed-code)
+  - [Read-only objects (experimental)](#read-only-objects-experimental)
+  - [Protected objects (experimental)](#protected-objects-experimental)
+  - [Cross-sandbox relationships](#cross-sandbox-relationships)
+  - [CLI](#cli)
+  - [Known Issues](#known-issues)
+  - [Deployment](#deployment)
+  - [Sponsors](#sponsors)
 
 ## VM
 
@@ -92,7 +97,7 @@ VM is a simple sandbox, without `require` feature, to synchronously run an untru
 
 * `timeout` - Script timeout in milliseconds.
 * `sandbox` - VM's global object.
-* `compiler` - `javascript` (default) or `coffeescript` or custom compiler function. The library expects you to have coffee-script pre-installed if the compiler is set to `coffeescript`.
+* `compiler` - `javascript` (default) or custom compiler function.
 * `eval` - If set to `false` any calls to `eval` or function constructors (`Function`, `GeneratorFunction`, etc) will throw an `EvalError` (default: `true`).
 * `wasm` -  If set to `false` any attempt to compile a WebAssembly module will throw a `WebAssembly.CompileError` (default: `true`).
 * `fixAsync` - If set to `true` any attempt to run code using async will throw a `VMError` (default: `false`).
@@ -126,7 +131,7 @@ Unlike `VM`, `NodeVM` lets you require modules same way like in regular Node's c
 
 * `console` - `inherit` to enable console, `redirect` to redirect to events, `off` to disable console (default: `inherit`).
 * `sandbox` - VM's global object.
-* `compiler` - `javascript` (default) or `coffeescript` or custom compiler function (which receives the code, and it's filepath). The library expects you to have coffee-script pre-installed if the compiler is set to `coffeescript`.
+* `compiler` - `javascript` (default) or custom compiler function (which receives the code, and it's filepath).
 * `eval` - If set to `false` any calls to `eval` or function constructors (`Function`, `GeneratorFunction`, etc) will throw an `EvalError` (default: `true`).
 * `wasm` -  If set to `false` any attempt to compile a WebAssembly module will throw a `WebAssembly.CompileError` (default: `true`).
 * `sourceExtensions` - Array of file extensions to treat as source code (default: `['js']`).
