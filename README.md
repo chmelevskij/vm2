@@ -385,8 +385,6 @@ $ vm2 ./script.js
 
 ## Sponsors
 
-[![Integromat][integromat-image]][integromat-url]
-
 [npm-image]: https://img.shields.io/npm/v/vm2.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/vm2
 [downloads-image]: https://img.shields.io/npm/dm/vm2.svg?style=flat-square
