@@ -6,7 +6,7 @@
   "contributors": [
     "Tomas Chmelevskij <t.chmelevskij@gmail.com> (https://tomche.space/)"
   ],
-  "name": "vm2",
+  "name": "@chmelevskij/vm2",
   "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. Securely!",
   "keywords": [
     "sandbox",
@@ -18,7 +18,7 @@
   ],
   "version": "3.9.2",
   "main": "index.js",
-  "repository": "github:chmelevskij/vm2",
+  "repository": "git://github.com/chmelevskij/vm2.git",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
