@@ -3,6 +3,9 @@
     "name": "Patrik Simek",
     "url": "https://patriksimek.cz"
   },
+  "contributors": [
+    "Tomas Chmelevskij <t.chmelevskij@gmail.com> (https://tomche.space/)"
+  ],
   "name": "vm2",
   "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. Securely!",
   "keywords": [
