@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
-const {match} = require('../lib/helpers');
-const assert = require('assert');
+import {match} from '../lib/helpers.mjs';
+import assert from 'assert';
 
 describe('wildcard matching', () => {
 	it('handles * correctly', () => {

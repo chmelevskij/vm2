@@ -3,10 +3,11 @@
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const assert = require('assert');
-const {NodeVM, VMScript} = require('..');
+import fs  from 'fs';
+import path from 'path';
+import assert from 'assert';
+import {NodeVM, VMScript} from '../lib/main.mjs';
+
 const NODE_VERSION = parseInt(process.versions.node.split('.')[0]);
 
 global.isVM = false;

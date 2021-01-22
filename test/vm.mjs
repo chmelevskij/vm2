@@ -3,10 +3,11 @@
 
 'use strict';
 
-const assert = require('assert');
-const {VM, VMScript} = require('..');
+import  assert from'assert';
+import  {VM, VMScript} from '..';
+import {inspect} from 'util';
+
 const NODE_VERSION = parseInt(process.versions.node.split('.')[0]);
-const {inspect} = require('util');
 
 global.isVM = false;
 

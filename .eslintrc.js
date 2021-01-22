@@ -10,7 +10,8 @@ module.exports = {
         "ecmaVersion": 2017,
         "ecmaFeatures": {
             "globalReturn": true
-        }
+        },
+        "sourceType": "module",
     },
     globals: {
     },
